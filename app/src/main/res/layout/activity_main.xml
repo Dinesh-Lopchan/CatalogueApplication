@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Welcome to Gurkha PC world"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="305dp"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/app_name"
+        android:fadeScrollbars="false"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:scrollbarSize="10dip"
+        android:scrollbars="horizontal"
+        android:smoothScrollbar="true">
+
+        <LinearLayout
+            android:id="@+id/horizontal_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <ImageView
+                android:id="@+id/asus"
+                android:layout_width="291dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/asus" />
+
+            <ImageView
+                android:id="@+id/hp"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_weight="1"
+                android:src="@drawable/hp" />
+
+            <ImageView
+                android:id="@+id/lenovo"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_weight="1"
+                android:src="@drawable/lenovo" />
+
+            <ImageView
+                android:id="@+id/microsoft"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_weight="1"
+                android:src="@drawable/microsoft" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+    <TextView
+        android:id="@+id/myTextTitle"
+        android:layout_width="397dp"
+        android:layout_height="50dp"
+        android:layout_gravity="clip_horizontal"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="About Gurkha PC world"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/myTextTitle2"
+        android:layout_width="397dp"
+        android:layout_height="38dp"
+        android:layout_gravity="clip_horizontal"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Established: 2023"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/myTextTitle3"
+        android:layout_width="397dp"
+        android:layout_height="31dp"
+        android:layout_gravity="clip_horizontal"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Located: Dharan, Nepal"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/myTextTitle4"
+        android:layout_width="397dp"
+        android:layout_height="30dp"
+        android:layout_gravity="clip_horizontal"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="email: Gurkha2345678@gmail.com"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/myTextTitle5"
+        android:layout_width="397dp"
+        android:layout_height="30dp"
+        android:layout_gravity="clip_horizontal"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="contact: 0779794857"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+
+
+</LinearLayout>
